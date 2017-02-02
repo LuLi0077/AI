@@ -1,12 +1,12 @@
 # AI
 
-### SudokuAI
+### Sudoku
 build a simple AI using constraint propagation and search to solve Sudoku puzzles
 
-### IsolationAI
-build a Game-Playing AI agent to win the board game Isolation
+### Isolation
+build a game-playing AI agent to win the board game Isolation
 
-### Pac-manAI
+### Pac-man
 build a Pac-Man AI that finds the most efficient path through its world
 
 ### Cargo_Route_Planning
