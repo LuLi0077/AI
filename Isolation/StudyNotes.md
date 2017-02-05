@@ -7,6 +7,8 @@
 * [Multi-player alpha-beta pruning](http://www.cc.gatech.edu/~thad/6601-gradAI-fall2015/Korf_Multi-player-Alpha-beta-Pruning.pdf)
 * [Depth-First Iterative Deepening vs Depth-First Search](http://movingai.com/dfid.html)
 * [Iterative Deepening](https://www.cs.ubc.ca/~hutter/teaching/cpsc322/2-Search6-final.pdf)
+* [Minimax with Alpha Beta Pruning](http://web.cs.ucla.edu/~rosen/161/notes/alphabeta.html)
+* [Google DeepMind's AlphaGo: How it works](https://www.tastehit.com/blog/google-deepmind-alphago-how-it-works/)
 
 
 On a 5x5 board, the max number of nodes to visit is O(25!) == 10^25. Use the average branching factor will reduce it to 8^25 ~ 10^22, that's still too big
