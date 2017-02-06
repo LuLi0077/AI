@@ -2,7 +2,7 @@
 
 ## Sources
 
-* Lectures   
+* Udacity lectures   
 * Artificial Intelligence A Modern Approach 3.4.4-5, 5.1 - 5.4
 * [Multi-player alpha-beta pruning](http://www.cc.gatech.edu/~thad/6601-gradAI-fall2015/Korf_Multi-player-Alpha-beta-Pruning.pdf)
 * [Depth-First Iterative Deepening vs Depth-First Search](http://movingai.com/dfid.html)
