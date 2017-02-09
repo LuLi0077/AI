@@ -33,6 +33,10 @@ On a 5x5 board, the max number of nodes to visit is O(25!) == 10^25. Use the ave
 
 * #my moves - #opp moves
 
+**A* search**
+Finds lowest cost path if:
+* h(s) < true cost - h never overestimate, h is optimistic and admissable
+
 
 **Quiescent search**
 
@@ -69,4 +73,6 @@ On a 5x5 board, the max number of nodes to visit is O(25!) == 10^25. Use the ave
 6. It's better to be player 2. If player 1 doesn't take the center square, then player 2 should.
 
 7. Good book of openning moves -> equvilant moves and hash table to search efficiently -> limit time: minmax, iterative depening, alpha-beta pruning -> evaluation functions
+
+8. How to come up with good heuristic? 
 
