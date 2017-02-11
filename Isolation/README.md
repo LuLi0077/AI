@@ -3,7 +3,7 @@
 Develop an adversarial search agent to play the game "Isolation".  
 
 
-### Synopsis
+### Synopsis ###
 
 Isolation is a deterministic, two-player game of perfect information in which the players alternate turns moving a single piece from one cell to another on a board.  Whenever either player occupies a cell, that cell becomes blocked for the remainder of the game.  The first player with no remaining legal moves loses, and the opponent is declared the winner.
 
@@ -14,7 +14,7 @@ Additionally, agents will have a fixed time limit each turn to search for the be
 These rules are implemented in the `isolation.Board` class.
 
 
-### Implementation (`game_agent.py`)
+### Implementation (`game_agent.py`) ###
 
 * Minimax algorithm - `CustomPlayer.minimax()`
 * Alpha-beta pruning for minimax - `CustomPlayer.alphabeta()`
@@ -24,7 +24,7 @@ These rules are implemented in the `isolation.Board` class.
 Here's a brief summary of the performance of the agent using the different heuristic functions **heuristic_analysis.md**. 
 
 
-### Testing
+### Testing ###
 
 #### Unit Tests
 
@@ -55,7 +55,7 @@ The tournament opponents are listed below:
 - AB_Improved: CustomPlayer agent using fixed-depth alpha-beta search and the improved_score heuristic
 
 
-### Research Review
+### Research Review ###
 
 A brief summary of the following papers' goals and results are included in **research_review.md**.
 
@@ -65,7 +65,7 @@ A brief summary of the following papers' goals and results are included in **res
 * [PathNet: Evolution Channels Gradient Descent in Super Neural Networks](https://arxiv.org/pdf/1701.08734.pdf) by the DeepMind Team
 
 
-### Study Notes
+### Study Notes ###
 
 #### Sources
 
