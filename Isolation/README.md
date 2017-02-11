@@ -16,16 +16,10 @@ These rules are implemented in the `isolation.Board` class.
 
 ### Implementation (`game_agent.py`)
 
-#### Adversarial Search
-
 * Minimax algorithm - `CustomPlayer.minimax()`
 * Alpha-beta pruning for minimax - `CustomPlayer.alphabeta()`
 * Iterative deepening - `CustomPlayer.get_move()`
-
-
-#### Evaluation Functions (`custom_score()`)
-
-Develop heuristic functions (at least three custom heuristic functions) to inform the value judgements the AI agent will make when choosing moves,  evaluate the performance of the heuristic using `tournament.py`. 
+* Heuristic functions - `custom_score()`
 
 Here's a brief summary of the performance of the agent using the different heuristic functions **heuristic_analysis.md**. 
 
@@ -76,7 +70,7 @@ A brief summary of the following papers' goals and results are included in **res
 #### Sources
 
 * Udacity AIND lectures   
-* Artificial Intelligence A Modern Approach 3.4.4, 3.4.5, 5.1 - 5.4
+* Artificial Intelligence A Modern Approach (3.4.4, 3.4.5, 5.1 - 5.4)
 * [Multi-player alpha-beta pruning](http://www.cc.gatech.edu/~thad/6601-gradAI-fall2015/Korf_Multi-player-Alpha-beta-Pruning.pdf)
 * [Depth-First Iterative Deepening vs Depth-First Search](http://movingai.com/dfid.html)
 * [Iterative Deepening](https://www.cs.ubc.ca/~hutter/teaching/cpsc322/2-Search6-final.pdf)
@@ -86,31 +80,37 @@ A brief summary of the following papers' goals and results are included in **res
 
 #### Topics
 
-**MinMax** 
+###### MinMax
 
-**MaxN for multipler games**
+###### MaxN for multipler games
 
-**Depth limited search**
+###### Depth limited search
+
 * Assume we can search 10^9 nodes per second. To play a step within 2 seconds, we can search 2*10^9 nodes. 
 	- 8^x < 2*10^9 => x < 10.3 We can only search this far. 
 
-**Evaluation function** 
-	* #my moves - #opp moves
+###### Evaluation function
 
-**A* search**
-	Finds lowest cost path if:
-	* h(s) < true cost - h never overestimate, h is optimistic and admissable
+* #my moves - #opp moves
 
-**Quiescent search**
+###### A* search
 
-**Iterative deepening**
+Finds lowest cost path if:
+* h(s) < true cost - h never overestimate, h is optimistic and admissable
+
+###### Quiescent search
+
+###### Iterative deepening
+
 * exponential time n = (k^(d+1) - 1)/(k-1)	
 * search deeper or shallower depends on where the player is at 
 
-**Horizon effect**
+###### Horizon effect
+
 * try many evaluation functions and see which one works the best
 
-**Alpha-beta pruning** 
+###### Alpha-beta pruning
+
 * prune away the subtree that doesn't contribute to MinMax eval
 
 
