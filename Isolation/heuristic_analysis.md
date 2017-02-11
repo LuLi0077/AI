@@ -1,0 +1,1 @@
+analysis should conclude with a comparison of the different heuristics and your reasoning for choosing the heuristic you ultimately use in your submitted agent.
