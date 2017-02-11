@@ -3,7 +3,7 @@
 Develop an adversarial search agent to play the game "Isolation".  
 
 
-## Synopsis
+### Synopsis
 
 Isolation is a deterministic, two-player game of perfect information in which the players alternate turns moving a single piece from one cell to another on a board.  Whenever either player occupies a cell, that cell becomes blocked for the remainder of the game.  The first player with no remaining legal moves loses, and the opponent is declared the winner.
 
@@ -14,30 +14,30 @@ Additionally, agents will have a fixed time limit each turn to search for the be
 These rules are implemented in the `isolation.Board` class.
 
 
-## Implementation (`game_agent.py`)
+### Implementation (`game_agent.py`)
 
-### Adversarial Search
+#### Adversarial Search
 
 * Minimax algorithm - `CustomPlayer.minimax()`
 * Alpha-beta pruning for minimax - `CustomPlayer.alphabeta()`
 * Iterative deepening - `CustomPlayer.get_move()`
 
 
-### Evaluation Functions (`custom_score()`)
+#### Evaluation Functions (`custom_score()`)
 
 Develop heuristic functions (at least three custom heuristic functions) to inform the value judgements the AI agent will make when choosing moves,  evaluate the performance of the heuristic using `tournament.py`. 
 
 Here's a brief summary of the performance of the agent using the different heuristic functions **heuristic_analysis.md**. 
 
 
-## Testing
+### Testing
 
-### Unit Tests
+#### Unit Tests
 
 The `agent_test.py` script contains unittest test cases to evaluate the implementations.  
 
 
-### Test Players
+#### Test Players
 
 `sample_players.py` contains 3 player classes to test against locally:
 
@@ -46,7 +46,7 @@ The `agent_test.py` script contains unittest test cases to evaluate the implemen
 - `HumanPlayer`  - allows *YOU* to play against the AI through the terminal
 
 
-### Tournament
+#### Tournament
 
 The `tournament.py` script will run a round-robin tournament between CustomPlayer agent with itertive deepening and custom heuristic function against several calibrated agents.
 
@@ -61,7 +61,7 @@ The tournament opponents are listed below:
 - AB_Improved: CustomPlayer agent using fixed-depth alpha-beta search and the improved_score heuristic
 
 
-## Research Review
+### Research Review
 
 A brief summary of the following papers' goals and results are included in **research_review.md**.
 
@@ -71,9 +71,9 @@ A brief summary of the following papers' goals and results are included in **res
 * [PathNet: Evolution Channels Gradient Descent in Super Neural Networks](https://arxiv.org/pdf/1701.08734.pdf) by the DeepMind Team
 
 
-## Study Notes
+### Study Notes
 
-### Sources
+#### Sources
 
 * Udacity AIND lectures   
 * Artificial Intelligence A Modern Approach 3.4.4, 3.4.5, 5.1 - 5.4
@@ -84,7 +84,7 @@ A brief summary of the following papers' goals and results are included in **res
 * [Google DeepMind's AlphaGo: How it works](https://www.tastehit.com/blog/google-deepmind-alphago-how-it-works/)
 
 
-### Topics
+#### Topics
 
 **MinMax** 
 
@@ -114,19 +114,13 @@ A brief summary of the following papers' goals and results are included in **res
 * prune away the subtree that doesn't contribute to MinMax eval
 
 
-### Tips:
+#### Tips:
 
 1. Apply MinMax with alpha-beta pruning: reduce search space from b^d to b^(d/2) that is 8^25 to 8^12.
-
 2. Rotate the board (0, 0), (4, 0), (4, 4) and (0, 4) have the same game tree: this is especially helpful in the beginning of the game when the braching factor is high. Player 1 has 25 possible moves, nut there are only 6 unique moves by using horizontal, vertical and diagonal symmetries. 
-
 3. Above level 3 symmetry checking isn't worth it. 
-
 4. As soon as there's a partition on the board, the player with longest path wins.
-
 5. Player 2 always win. As Player 1, start at the center square then reflect (180 degree rotation of opponent's moves) player 2. Player 2 can move to where player 1 can't reflect to avoid lossing, there are 8 such moves. 
-
-6. It's better to be player 2. If player 1 doesn't take the center square, then player 2 should.
-
+6. It's better to be player 2. If player 1 doesn't take the center square, then player 2 should.S
 7. Good book of openning moves -> equvilant moves and hash table to search efficiently -> limit time: minmax, iterative depening, alpha-beta pruning -> evaluation functions
 
