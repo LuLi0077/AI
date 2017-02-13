@@ -6,7 +6,7 @@ class Timeout(Exception):
     pass
 
 
-def custom_score(game, player):
+def custom_score0(game, player):
 
     if game.is_loser(player):
         return float("-inf")
@@ -18,6 +18,53 @@ def custom_score(game, player):
     opp_moves = len(game.get_legal_moves(game.get_opponent(player)))
     return float(own_moves - opp_moves)
 
+def custom_score1(game, player):
+
+    if game.is_loser(player):
+        return float("-inf")
+
+    if game.is_winner(player):
+        return float("inf")
+
+    own_moves = game.get_legal_moves(player)
+    opp_moves = game.get_legal_moves(game.get_opponent(player))
+    return float(len(set(own_moves) & set(opp_moves)))
+
+def custom_score2(game, player):
+
+    if game.is_loser(player):
+        return float("-inf")
+
+    if game.is_winner(player):
+        return float("inf")
+
+    own_moves = len(game.get_legal_moves(player))
+    return float(own_moves)
+
+def custom_score3(game, player):
+
+    if game.is_loser(player):
+        return float("-inf")
+
+    if game.is_winner(player):
+        return float("inf")
+
+    own_moves = len(game.get_legal_moves(player))
+    opp_moves = len(game.get_legal_moves(game.get_opponent(player)))
+    
+    for move in game.get_legal_moves(player):
+        game_forecast = game.forecast_move(move)
+        own_moves += len(game_forecast.get_legal_moves(player))
+        opp_moves += len(game_forecast.get_legal_moves(game_forecast.get_opponent(player)))
+    
+    return float(own_moves - opp_moves)
+
+def custom_score(game, player):
+
+    if len(game.get_blank_spaces()) > 20:
+        return custom_score0(game, player)
+    else:
+        return custom_score3(game, player)
 
 class CustomPlayer:
 
@@ -45,18 +92,20 @@ class CustomPlayer:
         try:
             depth = 1
             while (self.iterative or depth <= self.search_depth):
-                if self.method == 'minimax':
-                    best_move = self.minimax(game, depth)[1]
-                else:
-                    best_move = self.alphabeta(game, depth)[1]
+                
+                best_move = (self.minimax(game, depth)[1] if self.method == 'minimax' 
+                else self.alphabeta(game, depth)[1])
+                
                 depth += 1
+                #print("Best move {}".format(best_move))
 
                 if self.time_left() < self.TIMER_THRESHOLD:
                     raise Timeout()
 
         except Timeout:
-            pass
-        
+            #print("Depth {}: Timeout of iterative deepening.".format(depth))
+            return best_move
+
         return best_move
 
 
@@ -75,7 +124,8 @@ class CustomPlayer:
         if self.time_left() < self.TIMER_THRESHOLD:
             raise Timeout()
 
-        return (self.maxvalue(game, depth, alpha, beta) if maximizing_player else self.minvalue(game, depth, alpha, beta))
+        return (self.maxvalue(game, depth, alpha, beta) if maximizing_player 
+            else self.minvalue(game, depth, alpha, beta))
 
 
 # Max value
@@ -83,8 +133,8 @@ class CustomPlayer:
         if self.time_left() < self.TIMER_THRESHOLD:
             raise Timeout()
 
-        if not game.get_legal_moves():
-            return (float("inf"), (-1, -1))
+        if not game.get_legal_moves() or depth == 0:
+            return (self.score(game, self), (-1, -1))
 
         moves = {}
         for move in game.get_legal_moves():
@@ -109,8 +159,8 @@ class CustomPlayer:
         if self.time_left() < self.TIMER_THRESHOLD:
             raise Timeout()
 
-        if not game.get_legal_moves():
-            return (float("-inf"), (-1, -1))
+        if not game.get_legal_moves() or depth == 0:
+            return (self.score(game, self), (-1, -1))
 
         moves = {}
         for move in game.get_legal_moves():

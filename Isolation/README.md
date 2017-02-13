@@ -23,7 +23,7 @@ These rules are implemented in the `isolation.Board` class.
 * Iterative deepening - `CustomPlayer.get_move()`
 * Heuristic functions - `custom_score()`
 
-Here's a brief summary of the performance of the agent using the different heuristic functions **heuristic_analysis.md**. 
+Here's a brief summary of the performance of the agent using the different heuristic functions **heuristic_analysis.pdf**. 
 
 
 ## Testing
@@ -59,12 +59,10 @@ The tournament opponents are listed below:
 
 ## Research Review
 
-A brief summary of the following papers' goals and results are included in **research_review.md**.
-
 * [Game Tree Searching by Min / Max Approximation](https://people.csail.mit.edu/rivest/pubs/Riv87c.pdf) by Ron Rivest, MIT 
 * [Deep Blue](https://pdfs.semanticscholar.org/ad2c/1efffcd7c3b7106e507396bdaa5fe00fa597.pdf) by the IBM Watson Team 
-* [AlphaGo](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) by the DeepMind Team
 * [PathNet: Evolution Channels Gradient Descent in Super Neural Networks](https://arxiv.org/pdf/1701.08734.pdf) by the DeepMind Team
+* [AlphaGo](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) by the DeepMind Team - a brief summary of this paper's goals and results is included in **research_review.pdf**.
 
 
 ## Sources
