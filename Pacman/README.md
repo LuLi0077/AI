@@ -14,4 +14,4 @@ Using BFS, DFS, and A Star to teach Pac-Man to navigate his world in the most ef
 * `searchAgents`:	contains the search-based agents. 
 * `pacman.py`: the main file that runs Pacman games.   
 * `game.py`:	the logic behind how the Pacman world works.  
-* `util.py: useful data structures for implementing search algorithms.  
+* `util.py`: useful data structures for implementing search algorithms.  
