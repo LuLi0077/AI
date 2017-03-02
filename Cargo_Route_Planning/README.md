@@ -17,7 +17,6 @@ This project includes the classes and functions needed to solve deterministic lo
 ## Project Details
 
 ### Part 1 - Planning problems
-
 #### GIVEN: classical PDDL problems
 
 All problems are in the Air Cargo domain.  They have the same action schema defined, but different initial states and goals.
@@ -78,7 +77,6 @@ Goal(At(C1, JFK) ∧ At(C3, JFK) ∧ At(C2, SFO) ∧ At(C4, SFO))
 
 
 ### Part 2 - Domain-independent heuristics
-
 #### Implement heuristic method in `my_air_cargo_problems.py`
 - `AirCargoProblem.h_ignore_preconditions` method
 
@@ -98,7 +96,6 @@ Goal(At(C1, JFK) ∧ At(C3, JFK) ∧ At(C2, SFO) ∧ At(C4, SFO))
 
 
 ### Part 3 - Written Analysis
-
 #### The following are included in the written analysis:  
 - Provide an optimal plan for Problems 1, 2, and 3.
 - Compare and contrast non-heuristic search result metrics (optimality, time elapsed, number of node expansions) for Problems 1,2, and 3. 
@@ -113,4 +110,3 @@ Goal(At(C1, JFK) ∧ At(C3, JFK) ∧ At(C2, SFO) ∧ At(C4, SFO))
     - `python -m unittest tests.test_my_air_cargo_problems`
     - `python -m unittest tests.test_my_planning_graph`
 - The `run_search` script is provided for gathering metrics for various search methods on any or all of the problems and should be used for this purpose.
-
