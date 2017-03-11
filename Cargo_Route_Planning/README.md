@@ -11,13 +11,12 @@ This project includes the classes and functions needed to solve deterministic lo
 	- Implement relaxed problem heuristic in `my_air_cargo_problems.py`
 	- Implement Planning Graph and automatic heuristic in `my_planning_graph.py`
 	- Experiment and document metrics
-- Part 3 - Written Analysis: `heuristic_analysis.md`
+- Part 3 - Written Analysis: `heuristic_analysis.pdf`
 
 
 ## Project Details
 
 ### Part 1 - Planning problems
-#### GIVEN: classical PDDL problems
 
 All problems are in the Air Cargo domain.  They have the same action schema defined, but different initial states and goals.
 
@@ -72,11 +71,11 @@ Goal(At(C1, JFK) ∧ At(C3, JFK) ∧ At(C2, SFO) ∧ At(C4, SFO))
 - `air_cargo_p3` function
 
 #### Experiment and document metrics for non-heuristic planning solution searches
-* Run uninformed planning searches for `air_cargo_p1`, `air_cargo_p2`, and `air_cargo_p3`; provide metrics on number of node expansions required, number of goal tests, time elapsed, and optimality of solution for each search algorithm. Include the result of at least three of these searches, including breadth-first and depth-first, in the write-up (`breadth_first_search` and `depth_first_graph_search`). 
-* Use the `run_search` script for data collection
+- `heuristic_analysis.pdf` Part 1
 
 
 ### Part 2 - Domain-independent heuristics
+
 #### Implement heuristic method in `my_air_cargo_problems.py`
 - `AirCargoProblem.h_ignore_preconditions` method
 
@@ -91,11 +90,11 @@ Goal(At(C1, JFK) ∧ At(C3, JFK) ∧ At(C2, SFO) ∧ At(C4, SFO))
 - `PlanningGraph.h_levelsum` method
 
 #### Experiment and document: metrics of A* searches with these heuristics
-* Run A* planning searches using the heuristics implemented on `air_cargo_p1`, `air_cargo_p2` and `air_cargo_p3`. Provide metrics on number of node expansions required, number of goal tests, time elapsed, and optimality of solution for each search algorithm and include the results in the report. 
-* Use the `run_search` script for this purpose.
+- `heuristic_analysis.pdf` Part 2
 
 
 ### Part 3 - Written Analysis
+
 #### The following are included in the written analysis:  
 - Provide an optimal plan for Problems 1, 2, and 3.
 - Compare and contrast non-heuristic search result metrics (optimality, time elapsed, number of node expansions) for Problems 1,2, and 3. 
