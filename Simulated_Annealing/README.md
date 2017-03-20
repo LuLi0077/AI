@@ -15,4 +15,4 @@ Image Source: [Simulated Annealing - By Kingpin13 (Own work) [CC0], via Wikimedi
 
 Initial Path (1374.28)             |  Final Path (1092.36)                   
 :---------------------------------:|:---------------------------------:
-<img src="https://github.com/LuLi0077/SDC/blob/master/Simulated_Annealing/InitialPath.png" width="425" height="300">  |  <img src="https://github.com/LuLi0077/SDC/blob/master/Simulated_Annealing/FinalPath.png" width="425" height="300">  
+<img src="https://github.com/LuLi0077/AI/blob/master/Simulated_Annealing/InitialPath.png" width="425" height="300">  |  <img src="https://github.com/LuLi0077/AI/blob/master/Simulated_Annealing/FinalPath.png" width="425" height="300">  
