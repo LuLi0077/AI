@@ -194,18 +194,13 @@ class AirCargoProblem(Problem):
         conditions by ignoring the preconditions required for an action to be
         executed.
         '''
-        goal = set(self.goal)
-        actions = set(self.actions_list)
-        # Included fluents so far
-        fluents = set(decode_state(node.state, self.state_map).pos) & goal
         count = 0
-        while fluents != goal:
-            action = max(actions, key=lambda action: len((set(action.effect_add) - fluents) & goal))
-            fluents = fluents | set(action.effect_add)
-            actions = actions - set([action])
-            count += 1
+        kb = PropKB()
+        kb.tell(decode_state(node.state, self.state_map).pos_sentence())
+        for clause in self.goal:
+            if clause not in kb.clauses:                
+                    count += 1
         return count
-
 
 
 '''
