@@ -5,3 +5,8 @@ Constraint Satisfaction is a technique for solving problems by expressing limits
 ![8-queens puzzle solution](EightQueens.gif)
 
 Briefly, the 8-queens problem asks you to place 8 queens on a standard 8x8 chessboard such that none of the queens are in "check" (i.e., no two queens occupy the same row, column, or diagonal). The N-queens problem generalizes the puzzle to to any size square board.
+
+### Main Steps
+1. Overview
+2. Representing the N-Queens Problem
+3. Backtracking Search
