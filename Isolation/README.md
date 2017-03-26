@@ -2,6 +2,7 @@
 
 Develop an adversarial search agent to play the game "Isolation".  
 
+![Isolation](viz.gif)
 
 ## Synopsis
 
