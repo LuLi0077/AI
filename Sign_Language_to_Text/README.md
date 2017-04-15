@@ -11,7 +11,7 @@ The overall goal of this project is to build a word recognizer for American Sign
 
 ### Part 1: Data
 
-A data handler designed for this database is provided as the `AslDb` class in the `asl_data` module.  This handler creates the initial [pandas](http://pandas.pydata.org/pandas-docs/stable/) dataframe from the corpus of data included in the `data` directory as well as dictionaries suitable for extracting data in a format friendly to the [hmmlearn](https://hmmlearn.readthedocs.io/en/latest/) library.
+A data handler designed for this database is provided as the `AslDb` class in the `asl_data` module. This handler creates the initial [pandas](http://pandas.pydata.org/pandas-docs/stable/) dataframe from the corpus of data included in the `data` directory as well as dictionaries suitable for extracting data in a format friendly to the [hmmlearn](https://hmmlearn.readthedocs.io/en/latest/) library.
 
 ### Part 2: Model selection
 
@@ -28,16 +28,16 @@ Train the entire set with a feature set and model selector strategy.
 
 `my_recognizer.py` - Recognize test word sequences from word models set.
 
-### Part 4: Improve the WER with [statistical language models (SLM)](https://en.wikipedia.org/wiki/Language_model)
+### Part 4: Improve the WER with statistical language models [(SLM)](https://en.wikipedia.org/wiki/Language_model)
 
-The basic idea is that each word has some probability of occurrence within the set, and some probability that it is adjacent to specific other words. The recognizer in Part 3 is equivalent to a "0-gram" SLM.  Improve the WER with the [SLM data](ftp://wasserstoff.informatik.rwth-aachen.de/pub/rwth-boston-104/lm/) using "1-gram", "2-gram", and "3-gram" statistics. 
+The basic idea is that each word has some probability of occurrence within the set, and some probability that it is adjacent to specific other words. The recognizer in Part 3 is equivalent to a "0-gram" SLM. Improve the WER with the [SLM data](ftp://wasserstoff.informatik.rwth-aachen.de/pub/rwth-boston-104/lm/) using "1-gram", "2-gram", and "3-gram" statistics. 
 
 
 ## Other Information
 
 ### Raw Data
 
-The data in the `data/` directory was derived from the [RWTH-BOSTON-104 Database](http://www-i6.informatik.rwth-aachen.de/~dreuw/database-rwth-boston-104.php). The handpositions (`hand_condensed.csv`) are pulled directly from the database [boston104.handpositions.rybach-forster-dreuw-2009-09-25.full.xml](boston104.handpositions.rybach-forster-dreuw-2009-09-25.full.xml). The three markers are:
+The data in the `data/` directory was derived from the [RWTH-BOSTON-104 Database](http://www-i6.informatik.rwth-aachen.de/~dreuw/database-rwth-boston-104.php). The handpositions (`hand_condensed.csv`) are pulled directly from the [database](boston104.handpositions.rybach-forster-dreuw-2009-09-25.full.xml). The three markers are:
 
 *   0  speaker's left hand
 *   1  speaker's right hand
