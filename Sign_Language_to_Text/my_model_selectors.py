@@ -133,7 +133,7 @@ class SelectorDIC(ModelSelector):
                     best_num_components = n
                     score = dic
         if M == 1:
-            best_num_components = log[0]
+            best_num_components = log.items()
 
         return self.base_model(best_num_components)
 
