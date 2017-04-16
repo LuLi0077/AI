@@ -82,7 +82,8 @@ class SelectorBIC(ModelSelector):
         N, d = self.X.shape
         for n in range(self.min_n_components, self.max_n_components+1):
             try:
-                p = (n+1)*(n-1) + 2*d*n
+                #p = (n+1)*(n-1) + 2*d*n
+                p = n**2 + 2*d*n
                 model = self.base_model(n)
                 logL = model.score(self.X, self.lengths)
                 bic[n] = -2 * logL + p * np.log(N)
