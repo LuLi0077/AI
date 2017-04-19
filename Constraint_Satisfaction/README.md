@@ -6,7 +6,8 @@ Constraint Satisfaction is a technique for solving problems by expressing limits
 
 Briefly, the 8-queens problem asks you to place 8 queens on a standard 8x8 chessboard such that none of the queens are in "check" (i.e., no two queens occupy the same row, column, or diagonal). The N-queens problem generalizes the puzzle to to any size square board.
 
-### Main Steps
-1. Overview
-2. Representing the N-Queens Problem
-3. Backtracking Search
+## Main Steps
+
+1. Implement the `NQueensCSP class` to develop an efficient encoding of the N-queens problem and explicitly generate the constraints bounding the solution
+2. Write the search functions for recursive backtracking, and use them to solve the N-queens problem
+3. Conduct additional experiments with CSPs and various modifications to the search order (minimum remaining values, least constraining value, etc.)
