@@ -9,5 +9,7 @@ Briefly, the 8-queens problem asks you to place 8 queens on a standard 8x8 chess
 ## Main Steps
 
 1. Implement the `NQueensCSP class` to develop an efficient encoding of the N-queens problem and explicitly generate the constraints bounding the solution
+
 2. Write the search functions for recursive backtracking, and use them to solve the N-queens problem
+
 3. Conduct additional experiments with CSPs and various modifications to the search order (minimum remaining values, least constraining value, etc.)
