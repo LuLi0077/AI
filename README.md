@@ -32,3 +32,6 @@ implement [simulated annealing](https://en.wikipedia.org/wiki/Simulated_annealin
 
 ### Constraint_Satisfaction
 use Backtracking to solve the N-queens problem (which is a generalization [8-queens problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle))
+
+### Dog_Breed_Classifier
+build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images. Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.  
