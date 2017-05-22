@@ -4,6 +4,17 @@ Build a pipeline that can be used within a web or mobile app to process real-wor
 
 ![Sample Output](images/sample_dog_output.png)
 
+`dog_breed_classifier.ipynb` - 
+
+* Step 0: Import datasets
+* Step 1: Detect humans ([haarcascades](https://github.com/opencv/opencv/tree/master/data/haarcascades))
+* Step 2: Detect dogs
+* Step 3: Create a CNN to classify dog breeds (from scratch)
+* Step 4: Use a CNN to classify dog breeds (using transfer learning)
+* Step 5: Create a CNN to classify dog breeds (using transfer learning)
+* Step 6: Write algorithm
+* Step 7: Test algorithm
+
 
 ## Convolutional Neural Networks Workbooks
 
@@ -15,3 +26,8 @@ Build a pipeline that can be used within a web or mobile app to process real-wor
 * `bottleneck_features.ipynb` - calculate VGG-16 bottleneck features on a toy dataset
 * `transfer_learning.ipynb` - use transfer learning to train a CNN to classify dog breeds
 
+
+## Resources
+
+* [Building powerful image classification models using very little data](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+* [How to Grid Search Hyperparameters for Deep Learning Models in Python With Keras](http://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/)
