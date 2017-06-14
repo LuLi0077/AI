@@ -36,6 +36,9 @@ use Backtracking to solve the N-queens problem (which is a generalization [8-que
 ### Dog_Breed_Classifier
 build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images. Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.  
 
+### Time_Series_Prediction_and_Text_Generation
+build RNNs that can generate sequences based on input data - with a focus on two applications: With the first we'll use real market data in order to predict future Apple stock prices using an RNN model. The second one will be trained on Sir Arthur Conan Doyle's classic novel Sherlock Holmes and will generate wacky sentences based on it that may - or may not - become the next great Sherlock Holmes novel!
+
 ### Alexa_History_Skill
 build a fully functional skill for [Amazon’s Alexa](https://developer.amazon.com/alexa) that provides year-dated facts from AI History use the [Alexa Skills Kit (ASK)](https://developer.amazon.com/alexa-skills-kit) - a current state of the art API for building voice systems.  
 
