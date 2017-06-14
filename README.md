@@ -41,3 +41,6 @@ build a fully functional skill for [Amazon’s Alexa](https://developer.amazon.c
 
 ### Bookworm
 use IBM Watson's NLP Services to create a simple question-answering system
+
+### Mimic_Me
+track faces in a video, identify facial expressions (using [Affectiva](http://www.affectiva.com/)’s Emotion-as-a-Service API), and tag each face with an appropriate emoji next to it. Then turn this into a game where the player needs to mimic a random emoji displayed by the computer!
