@@ -2,9 +2,9 @@
 
 Build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images. Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.  
 
-Sample Dog Output          |  Sample Human Output                    
-:-------------------------:|:-------------------------:
-<img src="https://github.com/LuLi0077/AI/blob/master/Dog_Breed_Classifier/images/sample_dog_output.png" width="425" height="300">  |  <img src="https://github.com/LuLi0077/AI/blob/master/Dog_Breed_Classifier/images/sample_human_output.png" width="425" height="300">  
+Sample Dog Output 1        |Sample Dog Output 2        |Sample Human Output                    
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/LuLi0077/AI/blob/master/Dog_Breed_Classifier/images/sample_dog_output.png" width="285" height="285">  |  <img src="https://github.com/LuLi0077/AI/blob/master/Dog_Breed_Classifier/images/sample_dog_output2.png" width="285" height="285">  |  <img src="https://github.com/LuLi0077/AI/blob/master/Dog_Breed_Classifier/images/sample_human_output.png" width="285" height="285">  
 
 
 `dog_breed_classifier.ipynb` - 
