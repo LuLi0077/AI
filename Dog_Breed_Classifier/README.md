@@ -39,3 +39,6 @@ Sample Dog Output 1        |Sample Dog Output 2        |Sample Human Output
 * [How to Grid Search Hyperparameters for Deep Learning Models in Python With Keras](http://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/)
 * [Image Augmentation for Deep Learning With Keras](http://machinelearningmastery.com/image-augmentation-deep-learning-keras/)
 * [Keras_Cheat_Sheet_Python](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Keras_Cheat_Sheet_Python.pdf)
+* [ImageNet: VGGNet, ResNet, Inception, and Xception with Keras](http://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/) - [classify_image.py](https://github.com/LuLi0077/Code_Snippets/blob/master/Python/classify_image.py)
+* [Haar Cascade Object Detection Face & Eye OpenCV Python Tutorial](https://pythonprogramming.net/haar-cascade-face-eye-detection-python-opencv-tutorial/)
+* [Object Recognition with Convolutional Neural Networks in the Keras Deep Learning Library](http://machinelearningmastery.com/object-recognition-convolutional-neural-networks-keras-deep-learning-library/)
