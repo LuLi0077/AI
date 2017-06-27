@@ -4,6 +4,10 @@ A simple question-answering system built using IBM Watson's NLP services. First 
 
 `bookworm.ipynb` - 
 
+- Create a cloud-based NLP service instance and configure it.
+- Ingest a set of text documents using the service and analyze the results.
+- Accept questions in natural language and parse them.
+- Find relevant answers from the preprocessed text data.
 
 
 ## IBM Watson Resources
@@ -15,4 +19,5 @@ A simple question-answering system built using IBM Watson's NLP services. First 
   - [Conversation service](https://www.ibm.com/watson/developercloud/doc/conversation/index.html)
 
 - [IBM Bluemix Documentation](https://console.ng.bluemix.net/docs/)
-  - [Deploying apps](https://console.ng.bluemix.net/docs/manageapps/depapps.html#deployingapps)
+  - [Deploying apps](https://console.ng.bluemix.net/docs/manageapps/depapps.html#deployingapps
+  

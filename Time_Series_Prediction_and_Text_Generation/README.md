@@ -29,3 +29,4 @@ Build RNNs that can generate sequences based on input data - with a focus on two
 
 * [On the difficulty of training recurrent neural networks](http://proceedings.mlr.press/v28/pascanu13.pdf)
 * [Time Series Data Library](https://datamarket.com/data/list/?q=provider%3Atsdl)
+* [Natural Language Toolkit](http://www.nltk.org/)
