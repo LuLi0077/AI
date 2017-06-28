@@ -42,8 +42,11 @@ build RNNs that can generate sequences based on input data - with a focus on two
 ### Alexa_History_Skill
 build a fully functional skill for [Amazon’s Alexa](https://developer.amazon.com/alexa) that provides year-dated facts from AI History use the [Alexa Skills Kit (ASK)](https://developer.amazon.com/alexa-skills-kit) - a current state of the art API for building voice systems.  
 
-### Bookworm
+### NLP_Bookworm
 use IBM Watson's NLP Services to create a simple question-answering system
 
 ### Mimic_Me
 track faces in a video, identify facial expressions (using [Affectiva](http://www.affectiva.com/)’s Emotion-as-a-Service API), and tag each face with an appropriate emoji next to it. Then turn this into a game where the player needs to mimic a random emoji displayed by the computer!
+
+### NLP_Sentiment_Analysis
+build an end-to-end sentiment classification system using a combination of RNNs and foundations of NLP
