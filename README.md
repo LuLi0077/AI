@@ -45,8 +45,8 @@ build a fully functional skill for [Amazon’s Alexa](https://developer.amazon.c
 ### NLP_Bookworm
 use IBM Watson's NLP Services to create a simple question-answering system
 
+### NLP_Machine_Translation
+build a deep neural network that functions as part of an end-to-end machine translation pipeline
+
 ### Mimic_Me
 track faces in a video, identify facial expressions (using [Affectiva](http://www.affectiva.com/)’s Emotion-as-a-Service API), and tag each face with an appropriate emoji next to it. Then turn this into a game where the player needs to mimic a random emoji displayed by the computer!
-
-### NLP_Sentiment_Analysis
-build an end-to-end sentiment classification system using a combination of RNNs and foundations of NLP
