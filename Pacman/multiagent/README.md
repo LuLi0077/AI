@@ -10,8 +10,8 @@ Pacman, now with ghosts. Implement multiagent minimax and expectimax algorithms,
 `util.py` - useful data structures for implementing search algorithms    
 
 
-* Q1: Reflex Agent  
-* Q2: Minimax Agent   
-* Q3: Alpha-Beta Agent   
-* Q4: Expectimax Agent  
-* Q5: Evaluation Function  
+* Q1: Reflex Agent (`multiAgents.py` - `ReflexAgent`)  
+* Q2: Minimax Agent (`multiAgents.py` - `MinimaxAgent`)    
+* Q3: Alpha-Beta Agent (`multiAgents.py` - `AlphaBetaAgent`)    
+* Q4: Expectimax Agent (`multiAgents.py` - `ExpectimaxAgent`)    
+* Q5: Evaluation Function (`multiAgents.py` - `betterEvaluationFunction`)   

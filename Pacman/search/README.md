@@ -2,7 +2,7 @@
 
 ![maze](maze.png)
 
-Implement depth-first, breadth-first, uniform cost, and A* search algorithms. These algorithms are used to solve navigation and traveling salesman problems in the Pacman world.
+All those colored walls, mazes give Pacman the blues, so teach him to search. Implement depth-first, breadth-first, uniform cost, and A* search algorithms. These algorithms are used to solve navigation and traveling salesman problems in the Pacman world.
 
 `search.py` - the search algorithms  
 `searchAgents.py` -	the search-based agents  
@@ -19,4 +19,3 @@ Implement depth-first, breadth-first, uniform cost, and A* search algorithms. Th
 * Q6: Corners Problem: Heuristic (`searchAgents.py` - `cornersHeuristic`)
 * Q7: Eating All The Dots: Heuristic (`searchAgents.py` - `FoodSearchProblem`)
 * Q8: Suboptimal Search (`searchAgents.py` - `findPathToClosestDot`)
-
