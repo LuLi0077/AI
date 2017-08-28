@@ -4,16 +4,16 @@
 
 Implement standard machine learning classification algorithms using Naive Bayes, Perceptron, and MIRA models to classify digits then extend this by implementing a behavioral cloning Pacman agent.
 
-'data.zip' - data file, including the digit and face data      
-'perceptron_pacman.py' - behavioral cloning perceptron classifier    
-'perceptron.py' - perceptron classifier    
-'mira.py' -  MIRA classifier    
-'dataClassifier.py' - the wrapper code that will call the classifiers    
-'answers.py' - answer to Question 2 (below)    
-'classificationMethod.py' - abstract super class for the classifiers     
-'samples.py' - I/O code to read in the classification data        
-'util.py' - code defining some useful tools    
-'mostFrequent.py' - a simple baseline classifier that just labels every instance as the most frequent class    
+`data.zip` - data file, including the digit and face data      
+`perceptron_pacman.py` - behavioral cloning perceptron classifier    
+`perceptron.py` - perceptron classifier    
+`mira.py` -  MIRA classifier    
+`dataClassifier.py` - the wrapper code that will call the classifiers    
+`answers.py` - answer to Question 2 (below)    
+`classificationMethod.py` - abstract super class for the classifiers     
+`samples.py` - I/O code to read in the classification data        
+`util.py` - code defining some useful tools    
+`mostFrequent.py` - a simple baseline classifier that just labels every instance as the most frequent class    
 
 
 * Q1: Perceptron (`perceptron.py` - ``)  
